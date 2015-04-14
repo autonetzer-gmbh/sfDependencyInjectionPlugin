@@ -4,11 +4,6 @@
     "keywords": ["symfony1", "plugin", "dependency-injection", "service"],
     "license": "MIT",
     "type": "symfony1-plugin",
-    "extra": {
-      "installer-paths": {
-          "vendor/autonetzer/autonetzer.de/plugins/{$name}/": ["type:symfony1-plugin"]
-      }  
-    },
     "authors": [
         {
             "name": "Felix Peters",
