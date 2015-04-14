@@ -3,7 +3,12 @@
     "description": "Add Support for Symfony's DependencyInjection component to your symfony1.x project",
     "keywords": ["symfony1", "plugin", "dependency-injection", "service"],
     "license": "MIT",
-    "type": "autonetzer-symfony1-plugin",
+    "type": "symfony1-plugin",
+    "extra": {
+      "installer-paths": {
+          "vendor/autonetzer/autonetzer.de/plugins/{$name}/": ["type:symfony1-plugin"]
+      }  
+    },
     "authors": [
         {
             "name": "Felix Peters",
@@ -12,6 +17,7 @@
     ],
     "require": {
         "symfony/dependency-injection": "2.6.*",
-        "symfony/config": "2.6.*"
+        "symfony/config": "2.6.*",
+        "composer/installers": "~1.0.0"
     }
 }
